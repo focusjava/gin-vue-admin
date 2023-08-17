@@ -5,7 +5,7 @@ import (
 	"go/token"
 	"strings"
 
-	"github.com/flipped-aurora/gin-vue-admin/server/global"
+	"gin-vue-admin/global"
 )
 
 // AutoCodeStruct 初始版本自动化代码工具

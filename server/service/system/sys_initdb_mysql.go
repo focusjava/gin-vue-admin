@@ -4,16 +4,16 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/gofrs/uuid/v5"
 	"path/filepath"
 
-	"github.com/flipped-aurora/gin-vue-admin/server/config"
+	"gin-vue-admin/config"
 	"github.com/gookit/color"
 
-	"github.com/flipped-aurora/gin-vue-admin/server/utils"
+	"gin-vue-admin/utils"
 
-	"github.com/flipped-aurora/gin-vue-admin/server/global"
-	"github.com/flipped-aurora/gin-vue-admin/server/model/system/request"
-	"github.com/gofrs/uuid/v5"
+	"gin-vue-admin/global"
+	"gin-vue-admin/model/system/request"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )

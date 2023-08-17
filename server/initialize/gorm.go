@@ -3,9 +3,9 @@ package initialize
 import (
 	"os"
 
-	"github.com/flipped-aurora/gin-vue-admin/server/global"
-	"github.com/flipped-aurora/gin-vue-admin/server/model/example"
-	"github.com/flipped-aurora/gin-vue-admin/server/model/system"
+	"gin-vue-admin/global"
+	"gin-vue-admin/model/example"
+	"gin-vue-admin/model/system"
 
 	"go.uber.org/zap"
 	"gorm.io/gorm"

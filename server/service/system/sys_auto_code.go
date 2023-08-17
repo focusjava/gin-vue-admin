@@ -13,15 +13,15 @@ import (
 	"strings"
 	"text/template"
 
-	ast2 "github.com/flipped-aurora/gin-vue-admin/server/utils/ast"
+	ast2 "gin-vue-admin/utils/ast"
 
-	"github.com/flipped-aurora/gin-vue-admin/server/resource/autocode_template/subcontract"
+	"gin-vue-admin/resource/autocode_template/subcontract"
 	cp "github.com/otiai10/copy"
 	"go.uber.org/zap"
 
-	"github.com/flipped-aurora/gin-vue-admin/server/global"
-	"github.com/flipped-aurora/gin-vue-admin/server/model/system"
-	"github.com/flipped-aurora/gin-vue-admin/server/utils"
+	"gin-vue-admin/global"
+	"gin-vue-admin/model/system"
+	"gin-vue-admin/utils"
 
 	"gorm.io/gorm"
 )
@@ -75,7 +75,7 @@ func Init(Package string) {
 		packageServiceName: {
 			path: filepath.Join(global.GVA_CONFIG.AutoCode.Root,
 				global.GVA_CONFIG.AutoCode.Server, "service", "enter.go"),
-			importCodeF:  "github.com/flipped-aurora/gin-vue-admin/server/%s/%s",
+			importCodeF:  "gin-vue-admin/%s/%s",
 			packageNameF: "%s",
 			groupName:    "ServiceGroup",
 			structNameF:  "%sServiceGroup",
@@ -83,7 +83,7 @@ func Init(Package string) {
 		packageRouterName: {
 			path: filepath.Join(global.GVA_CONFIG.AutoCode.Root,
 				global.GVA_CONFIG.AutoCode.Server, "router", "enter.go"),
-			importCodeF:  "github.com/flipped-aurora/gin-vue-admin/server/%s/%s",
+			importCodeF:  "gin-vue-admin/%s/%s",
 			packageNameF: "%s",
 			groupName:    "RouterGroup",
 			structNameF:  "%s",
@@ -91,7 +91,7 @@ func Init(Package string) {
 		packageAPIName: {
 			path: filepath.Join(global.GVA_CONFIG.AutoCode.Root,
 				global.GVA_CONFIG.AutoCode.Server, "api/v1", "enter.go"),
-			importCodeF:  "github.com/flipped-aurora/gin-vue-admin/server/%s/%s",
+			importCodeF:  "gin-vue-admin/%s/%s",
 			packageNameF: "%s",
 			groupName:    "ApiGroup",
 			structNameF:  "%sApiGroup",

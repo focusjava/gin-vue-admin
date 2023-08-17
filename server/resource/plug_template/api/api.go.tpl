@@ -1,10 +1,10 @@
 package api
 
 import (
-	"github.com/flipped-aurora/gin-vue-admin/server/global"
-	"github.com/flipped-aurora/gin-vue-admin/server/model/common/response"
-{{ if .NeedModel }}	"github.com/flipped-aurora/gin-vue-admin/server/plugin/{{ .Snake}}/model" {{ end }}
-	"github.com/flipped-aurora/gin-vue-admin/server/plugin/{{ .Snake}}/service"
+	"gin-vue-admin/global"
+	"gin-vue-admin/model/common/response"
+{{ if .NeedModel }}	"gin-vue-admin/plugin/{{ .Snake}}/model" {{ end }}
+	"gin-vue-admin/plugin/{{ .Snake}}/service"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 )

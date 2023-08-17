@@ -1,10 +1,10 @@
 package api
 
 import (
-	"github.com/flipped-aurora/gin-vue-admin/server/global"
-	"github.com/flipped-aurora/gin-vue-admin/server/model/common/response"
-	email_response "github.com/flipped-aurora/gin-vue-admin/server/plugin/email/model/response"
-	"github.com/flipped-aurora/gin-vue-admin/server/plugin/email/service"
+	"gin-vue-admin/global"
+	"gin-vue-admin/model/common/response"
+	email_response "gin-vue-admin/plugin/email/model/response"
+	"gin-vue-admin/plugin/email/service"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 )

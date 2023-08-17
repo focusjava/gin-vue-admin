@@ -3,13 +3,13 @@ package system
 import (
 	"errors"
 	"fmt"
+	"github.com/gofrs/uuid/v5"
 	"time"
 
-	"github.com/flipped-aurora/gin-vue-admin/server/global"
-	"github.com/flipped-aurora/gin-vue-admin/server/model/common/request"
-	"github.com/flipped-aurora/gin-vue-admin/server/model/system"
-	"github.com/flipped-aurora/gin-vue-admin/server/utils"
-	"github.com/gofrs/uuid/v5"
+	"gin-vue-admin/global"
+	"gin-vue-admin/model/common/request"
+	"gin-vue-admin/model/system"
+	"gin-vue-admin/utils"
 	"gorm.io/gorm"
 )
 
