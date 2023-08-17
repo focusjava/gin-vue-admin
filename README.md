@@ -115,7 +115,7 @@ go build -o server main.go (windows编译命令为go build -o server.exe main.go
 cd web
 
 # 安装依赖
-npm install
+npm install --registry=https://registry.npm.taobao.org
 
 # 启动web项目
 npm run serve
