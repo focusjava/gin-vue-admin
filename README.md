@@ -118,7 +118,7 @@ cd web
 npm install --registry=https://registry.npm.taobao.org
 
 # 启动web项目
-npm run serve
+npm run dev
 ```
 
 ### 2.3 swagger自动化API文档
